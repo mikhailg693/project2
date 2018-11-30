@@ -1,131 +1,204 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Manhattan Hunter Science High School</title>
+    <title>Manhattan Hunter Science High School</title>
 
-	<!--Required metatag and stylesheet-->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Required metatag and stylesheet-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
-	<!--Custom styles here-->
-	<link rel="stylesheet" href="css/style.css">
+    <!--Custom styles here-->
+    <link rel="stylesheet" href="css/style.css">
 
     <style>
- 
+        .fluid-container {
+            background-position: center;
+        }
+
+        .announcement {
+/*
+            padding-right:50px;
+            padding-left:50px;
+*/
+            padding-bottom: 600px;
+        }
+        
+        .item-active,
+        .item {
+            width: 75%;
+            margin: auto;
+        }
+
     </style>
-    
+
 </head>
-<body>
 
-<!--Font-->
+<body style="background-color: lightgrey;">
 
-    
-<!--Logo & Nav-->
-<div class="header" style="background-color:white;margin-bottom:15px;">
-    
-    <div class="col-xs-3">
-        <a href="index.html">
+    <!--Font-->
+
+
+    <!--Logo & Nav-->
+    <div class="header" style="background-color:white;">
+
+        <div class="col-xs-3">
+            <a href="index.html">
             <img src="img/mhshslogo.png" style="width:120px;height:75px;padding-top:3px;"></a>
-    </div>
-    
-    <div class="navbar" id="navbar" style="margin-bottom:15px;margin-left:15px;margin-right:15px;padding-right:20px;padding-top:10px;">
-        <ul class="nav navbar-nav navbar-right" style="background-color:white;border:2px solid mediumpurple;background-color:white;border-radius: 15px;">
-            <li class="active" style="border-right: 1px solid mediumpurple"><a href="index.html">Home</a></li>
-            <li style="border-right: 1px solid mediumpurple"><a href="contact.html" target="_blank">Contact Us</a></li>
-            <li style="border-right: 1px solid mediumpurple"><a href="events.html" target="_blank">Events</a></li>
-            <li style="border-right: 0px solid mediumpurple"><a href="https://mhshs.wufoo.com/forms/mhshs-pa-donation/" target="_blank">Donations</a></li>
-            <li style="border-left: 1px solid mediumpurple"><a href="http://www.psal.org/events-and-standings/school-calendar.aspx?schid=03548" target="_blank">Athletics</a></li>
-        </ul>
-                     
-    </div>
-</div> 
-    
-    <div class="col-xs-3 announcement" style="text-align:center;background-color:#A74AC7;border-radius:15px 50px;background-image: linear-gradient(to bottom right, mediumpurple, white);">
-    
-    <!--Upcoming Announcements-->
-    <h2>Upcoming Events</h2>
-        <p>Parent Association Meeting: College Readiness Workshop<br> Date(s): November 27th<br> Time: 8:30AM</p>  
-        <p>Parent Teacher Conference (Evening)<br> Date(s): November 29th<br> Time: 5:00-7:30PM</p>  
-        <p>Parent Teacher Conference (Afternoon)<br> Date(s): November 30th<br> Time: 12:20-2:20PM</p>
-        <p>Thanksgiving Recess (Schools Closed)<br> Date(s): November 22nd - 23rd</p> 
-        <p>Winter Recess (Schools Closed)<br> Date(s): December 24th - January 1st</p>
-    
-    <!--Calendar-->
-    <h2>School Calendar</h2>        
-        <a href="https://calendar.google.com/calendar/embed?src=pcdp7gbec9r2do3kl0o4tosreo@group.calendar.google.com&ctz=America/New_York&pli=1" target="_blank">
-            <img src="img/googlecalendarlogo1.png" style="width:135px"></a><br>      
+        </div>
 
-    <!--Art
+        <div class="navbar" id="navbar" style="margin-bottom:0px;margin-left:15px;margin-right:15px;padding-right:20px;padding-top:10px;">
+            <ul class="nav navbar-nav navbar-right" style="background-color:white;border:2px solid mediumpurple;background-color:white;border-radius: 15px;">
+                <li class="active" style="border-right: 1px solid mediumpurple"><a href="index.html">Home</a></li>
+                <li style="border-right: 1px solid mediumpurple"><a href="contact.html" target="_blank">Contact Us</a></li>
+                <li style="border-right: 1px solid mediumpurple"><a href="events.html" target="_blank">Events</a></li>
+                <li style="border-right: 0px solid mediumpurple"><a href="https://mhshs.wufoo.com/forms/mhshs-pa-donation/" target="_blank">Donations</a></li>
+                <li style="border-left: 1px solid mediumpurple"><a href="http://www.psal.org/events-and-standings/school-calendar.aspx?schid=03548" target="_blank">Athletics</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+
+    <!--carousel-->
+    <div class="fluid-container">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+            <!-- wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <!--slide 1-->
+                <div class="item active">
+                    <img src="img/portrait11.jpg">
+                    <div class="carousel-caption">
+                        <!--<p>Luthur</p>-->
+                    </div>
+                </div>
+                <!--slide 2-->
+                <div class="item">
+                    <img src="img/portrait7.jpg">
+                    <div class="carousel-caption">
+                        <!--<p>Sherlock</p-->>
+                    </div>
+                </div>
+                <!--slide 3-->
+                <div class="item">
+                    <img src="img/portrait8.jpg">
+                    <div class="carousel-caption">
+                        <!--<p>Penny Dreadful</p>-->
+                    </div>
+                </div>
+            </div>
+            <!-- controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+        </div>
+    </div>
+
+
+
+
+    <div class="col-xs-4 announcement" style="text-align:center;background-color: yellowgreen;">
+
+        <!--Upcoming Announcements-->
+        <h2>Upcoming Events</h2>
+        <p>Parent Association Meeting: College Readiness Workshop<br> Date(s): November 27th<br> Time: 8:30AM</p>
+        <p>Parent Teacher Conference (Evening)<br> Date(s): November 29th<br> Time: 5:00-7:30PM</p>
+        <p>Parent Teacher Conference (Afternoon)<br> Date(s): November 30th<br> Time: 12:20-2:20PM</p>
+        <p>Thanksgiving Recess (Schools Closed)<br> Date(s): November 22nd - 23rd</p>
+        <p>Winter Recess (Schools Closed)<br> Date(s): December 24th - January 1st</p>
+
+        <!--Calendar-->
+        <h2>School Calendar</h2>
+        <a href="https://calendar.google.com/calendar/embed?src=pcdp7gbec9r2do3kl0o4tosreo@group.calendar.google.com&ctz=America/New_York&pli=1" target="_blank">
+            <img src="img/googlecalendarlogo1.png" style="width:135px"></a><br>
+
+        <!--Art
     <h2>The Guggenheim: Nick Kozak</h2>
         <a href="https://www.guggenheim.org/video/luis-camnitzer-and-an-art-educator-in-conversation" target="_blank">      <img src="img/guggenheim1.png" style="width: 135px"></a><br>
     -->
-        
-    <!--Microsoft Office-->
-    <h2>Mircrosoft Office: Free Download</h2>
+
+        <!--Microsoft Office-->
+        <h2>Mircrosoft Office: Free Download</h2>
         <a href="https://studentoffice.net/" target="_blank">
             <img src="img/nycdoe1.png" style="width:135px"></a>
-        
+
     </div>
-    
+
     <!--Content-->
-    <div class="col-xs-9">
-   
-    <div style="border-bottom: 5px dashed mediumpurple;">
-        <h2>Mission</h2>
-            <p>Our mission is to bring alive the power of curiosity and passion in each and every student and to help maximize their academic potential. Manhattan Hunter Science High School is a science-focused college-preparatory high school designed to give students the tools they need to achieve academic success. Hunter College is an integral part of Manhattan Hunter Science High School, from collaborating with faculty and enrolling students in college-level courses on its own Upper East Side campus, to providing a full time 12th grade college experience where students develop important early college skills, including academic research and writing, effective study habits, and time management. 
-            </p>
-        </div>
-        
-    <div style="border-bottom: 5px dashed mediumpurple;">
-        <h2>Admissions</h2>
-            <p>We look for students with a strong record of attendance, grades of 80 and above, and levels 2-4 on NY State Examinations. We receive thousands of applications and only have space for approximately 100 students, it is very important to rank us high on your HS preference sheet. The higher the rank, the more likely a match. Students who wish to attend Manhattan/Hunter Science High School must submit the following materials by December 3, 2018. Applications and supplementary materials can be mailed to the school at the following address:
-            Manhattan/Hunter Science High School
-            C/O Admissions
-            122 Amsterdam Ave, 5th Floor
-            New York City, NY 10023
-            Application: http://www.mhshs.org/uploads/1/1/5/8/115861777/applications_2019-2020.pdf
-            </p>
-        </div>
-   
-    <div style="border-bottom: 5px dashed mediumpurple;">
-        <h2>Academic Reports</h2>
-            <p>Each year the New York Times reports on the most competitive high schools in New York City public schools, excluding the specialized high schools. In 2017, Manhattan Hunter Science High School was ranked number one as the most competitive high school in NYC.
-                
-            NYT Article
-            https://www.nytimes.com/2017/03/10/nyregion/new-york-city-high-school-admissions-rate.html
-    
-            In 2015, Manhattan/Hunter Science was ranked #14 of the New York Post's top 50 high schools and placed again in the 2013 report. In 2010, Manhattan/Hunter Science was ranked #16 of the New York Post's top 50 high schools.
-                
-            NYP Article
-            https://nypost.com/2015/09/27/the-top-40-public-schools-that-dont-require-the-shsat-test/
-            
-            MHSHS has consistently received A's on the NYC Department of Education Progress Report since its inception. The Progress Report aims to evaluate our school's performance in three key areas: student progress, student performance, and learning environment.
-                
-            NYC DOE Report 2017-2018
-            https://tools.nycenet.edu/snapshot/2018/03M541/HS/
+    <div class="col-xs-7">
+
+        <div style="border-bottom: 5px dashed mediumpurple;">
+            <h2>Mission</h2>
+            <p>Our mission is to bring alive the power of curiosity and passion in each and every student and to help maximize their academic potential. Manhattan Hunter Science High School is a science-focused college-preparatory high school designed to give students the tools they need to achieve academic success. Hunter College is an integral part of Manhattan Hunter Science High School, from collaborating with faculty and enrolling students in college-level courses on its own Upper East Side campus, to providing a full time 12th grade college experience where students develop important early college skills, including academic research and writing, effective study habits, and time management.
             </p>
         </div>
 
-    <div>
-        <h2>Virtual Tour</h2>
-            <p>Due to an overwhelming number of responses each year to our tour registration and our inability to accommodate such a large number of families both in the MLK auditorium and in our limited space on the 5th floor, we will continue to offer our full length virtual tour, produced by Hunter College. 
-            
-            You may also click on the virtual tour link below. In the video you will find classes in session, hear interviews with members of our teaching staff as well as testimonials from students, and hear about our school’s focus and mission from our principal. 
-            
-            Thank you for your understanding and patience,
-            The MHSHS Admissions Team
+        <div style="border-bottom: 5px dashed mediumpurple;">
+            <h2>Admissions</h2>
+            <p>We look for students with a strong record of attendance, grades of 80 and above, and levels 2-4 on NY State Examinations. We receive thousands of applications and only have space for approximately 100 students, it is very important to rank us high on your HS preference sheet. The higher the rank, the more likely a match. Students who wish to attend Manhattan/Hunter Science High School must submit the following materials by December 3, 2018. Applications and supplementary materials can be mailed to the school at the following address:<br>
+                <br>Manhattan/Hunter Science High School<br> C/O Admissions<br> 122 Amsterdam Ave, 5th Floor<br> New York, NY 10023<br>
+                <br><a href="http://www.mhshs.org/uploads/1/1/5/8/115861777/applications_2019-2020.pdf" target="_blank">Application</a>
             </p>
-        </div>    
-    
+        </div>
+
+        <div style="border-bottom: 5px dashed mediumpurple;">
+            <h2>Academic Reports</h2>
+            <p>Each year the New York Times reports on the most competitive high schools in New York City public schools, excluding the specialized high schools. In 2017, Manhattan Hunter Science High School was ranked number one as the most competitive high school in NYC.<br>
+
+                <br>
+                <a href="https://www.nytimes.com/2017/03/10/nyregion/new-york-city-high-school-admissions-rate.html" target="_blank">New York Times</a><br>
+
+                <br>In 2015, Manhattan/Hunter Science was ranked #14 of the New York Post's top 50 high schools and placed again in the 2013 report. In 2010, Manhattan/Hunter Science was ranked #16 of the New York Post's top 50 high schools.<br>
+
+                <br>
+                <a href="https://nypost.com/2015/09/27/the-top-40-public-schools-that-dont-require-the-shsat-test/" target="_blank">New York Post</a><br>
+
+                <br>MHSHS has consistently received A's on the NYC Department of Education Progress Report since its inception. The Progress Report aims to evaluate our school's performance in three key areas: student progress, student performance, and learning environment.<br>
+
+                <br>
+                <a href="https://tools.nycenet.edu/snapshot/2018/03M541/HS/" target="_blank">NYC DOE 2017-2018 Progress Report</a>
+            </p>
+        </div>
+
+        <div style="padding-bottom: 100px;">
+            <h2>Virtual Tour</h2>
+            <p>Due to an overwhelming number of responses each year to our tour registration and our inability to accommodate such a large number of families both in the MLK auditorium and in our limited space on the 5th floor, we will continue to offer our full length virtual tour, produced by Hunter College. You may also click on the virtual tour link below. In the video you will find classes in session, hear interviews with members of our teaching staff as well as testimonials from students, and hear about our school’s focus and mission from our principal.<br>
+            </p>
+        </div>
+
     </div>
-    
-	<!--Required scripts-->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
 
-	<!--Custom script here-->
-	<script></script>
+    <!--Required scripts-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--Custom script here-->
+    <script></script>
 </body>
 
 </html>
+
+
+
+
+<footer class="col-xs-12" style="text-align: center">
+    <p>
+        <a/ href="index.html">Home</a> |
+            <a/ href="contact.html">Contact</a> |
+                <a/ href="events.html">Events</a>
+    </p>
+    <p>Copyright 2018</p>
+
+</footer>

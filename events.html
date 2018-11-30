@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Events</title>
+    <title>Events</title>
 
-	<!--Required metatag and stylesheet-->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Required metatag and stylesheet-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
-	<!--Custom styles here-->
-	<link rel="stylesheet" href="css/style.css">
+    <!--Custom styles here-->
+    <link rel="stylesheet" href="css/style.css">
 
     <style>
-    
         body {
             background-image: url(img/corkboard.jpg);
             height: 100%;
@@ -20,16 +20,16 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
-        
+
         div.pic {
             background-color: white;
             box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
             margin-bottom: 30px;
             margin-top: 20px;
-            border-radius:3px;
+            border-radius: 3px;
             float: left;
             width: 33.33%;
-            padding:20px;
+            padding: 20px;
         }
 
         div.pictext {
@@ -38,94 +38,189 @@
             font-family: 'Permanent Marker', cursive;
             font-size: 17px;
         }
-        
 
+/* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+/* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+/* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
     </style>
-    
+
 </head>
+
 <body style="margin-left:0px;margin-right:0px;margin-bottom:30px;">
 
-<!--Font-->
-<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-    
-<!--Logo & Nav-->
-<div class="header" style="background-color:white;margin-bottom:15px;">
-    
-    <div class="col-xs-3">
-        <a href="index.html">
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+    <!--Logo & Nav-->
+    <div class="header" style="background-color:white;margin-bottom:15px;">
+
+        <div class="col-xs-3">
+            <a href="index.html">
             <img src="img/mhshslogo.png" style="width:120px;height:75px;padding-top:3px;"></a>
+        </div>
+
+        <div class="navbar" id="navbar" style="margin-bottom:15px;margin-left:15px;margin-right:15px;padding-right:20px;padding-top:10px;">
+            <ul class="nav navbar-nav navbar-right" style="background-color:white;border:2px solid mediumpurple;background-color:white;border-radius: 15px;">
+                <li class="active" style="border-right: 1px solid mediumpurple"><a href="index.html">Home</a></li>
+                <li style="border-right: 1px solid mediumpurple"><a href="contact.html" target="_blank">Contact Us</a></li>
+                <li style="border-right: 1px solid mediumpurple"><a href="events.html" target="_blank">Events</a></li>
+                <li style="border-right: 0px solid mediumpurple"><a href="https://mhshs.wufoo.com/forms/mhshs-pa-donation/" target="_blank">Donations</a></li>
+                <li style="border-left: 1px solid mediumpurple"><a href="http://www.psal.org/events-and-standings/school-calendar.aspx?schid=03548" target="_blank">Athletics</a></li>
+            </ul>
+
+        </div>
     </div>
-    
-    <div class="navbar" id="navbar" style="margin-bottom:15px;margin-left:15px;margin-right:15px;padding-right:20px;padding-top:10px;">
-        <ul class="nav navbar-nav navbar-right" style="background-color:white;border:2px solid mediumpurple;background-color:white;border-radius: 15px;">
-            <li class="active" style="border-right: 1px solid mediumpurple"><a href="index.html">Home</a></li>
-            <li style="border-right: 1px solid mediumpurple"><a href="contact.html" target="_blank">Contact Us</a></li>
-            <li style="border-right: 1px solid mediumpurple"><a href="events.html" target="_blank">Events</a></li>
-            <li style="border-right: 0px solid mediumpurple"><a href="https://mhshs.wufoo.com/forms/mhshs-pa-donation/" target="_blank">Donations</a></li>
-            <li style="border-left: 1px solid mediumpurple"><a href="http://www.psal.org/events-and-standings/school-calendar.aspx?schid=03548" target="_blank">Athletics</a></li>
-        </ul>
-                     
-    </div>
-</div> 
-    
-    
+
+
     <!--School Events-->
-    <div id="events">
-    
+
+
     <div>
         <h2 style="margin:0px; padding: 20px;text-align: center;background-image:url(img/piecepaper.png);background-position:center;background-size:contain">MHSHS Events: 2018-2019</h2>
-            </div>
-    
+    </div>
+
+    <div class="col-xs-12" id="events" style="margin-left: 65px">
+
         <div class="pic" style="width:400px;height:310px;margin:10px;">
             <img class="img-responsive" src="img/portrait7.jpg" style="border:2px double">
-                <div class="pictext">
-                    <p>National Honor Society: Inductees</p>
+            <div class="pictext">
+                <p>National Honor Society: Inductees</p>
             </div>
         </div>
-        
+
         <div class="pic" style="width:400px;height:310px;margin:10px;">
             <img class="img-responsive" src="img/portrait11.jpg" style="border:2px double">
-                <div class="pictext">
-                    <p>College Field Trip: SUNY New Paltz</p>
+            <div class="pictext">
+                <p>College Field Trip: SUNY New Paltz</p>
             </div>
         </div>
-        
-            <div class="pic" style="width:400px;height:310px;margin:10px;">
-                <img class="img-responsive" src="img/portrait7.jpg" style="border:2px double">
-                    <div class="pictext">
-                        <p>Day of Service: Social Justice Program</p>
+
+        <div class="pic" style="width:400px;height:310px;margin:10px;">
+            <img class="img-responsive" src="img/portrait7.jpg" style="border:2px double">
+            <div class="pictext">
+                <p>Day of Service: Social Justice Program</p>
             </div>
         </div>
-        
-            <div class="pic" style="width:400px;height:310px;margin:10px;">
-                <img class="img-responsive" src="img/portrait11.jpg" style="border:2px double">
-                    <div class="pictext">
-                        <p>Hunter Games</p>
+
+        <div class="pic" style="width:400px;height:310px;margin:10px;">
+            <img class="img-responsive" src="img/portrait11.jpg" style="border:2px double">
+            <div class="pictext">
+                <p>Hunter Games</p>
             </div>
         </div>
-        
-            <div class="pic" style="width:400px;height:310px;margin:10px;">
-                <img class="img-responsive" src="img/portrait7.jpg" style="border:2px double">
-                    <div class="pictext">
-                        <p>Decades Dance</p>
+
+        <div class="pic" style="width:400px;height:310px;margin:10px;">
+            <img class="img-responsive" src="img/portrait7.jpg" style="border:2px double">
+            <div class="pictext">
+                <p>Decades Dance</p>
             </div>
         </div>
-        
-            <div class="pic" style="width:400px;height:310px;margin:10px;">
-                <img class="img-responsive" src="img/portrait8.jpg" style="border:2px double">
-                    <div class="pictext">
-                        <p>Holiday Party</p>    
+
+        <div class="pic" style="width:400px;height:310px;margin:10px;">
+            <img class="img-responsive" src="img/portrait8.jpg" style="border:2px double">
+            <div class="pictext">
+                <p>Holiday Party</p>
             </div>
         </div>
 
     </div>
     
-	<!--Required scripts-->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+<!--Modal-->
+<h2>Modal Example</h2>
 
-	<!--Custom script here-->
-	<script></script>
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Some text in the Modal..</p>
+    </div>
+
+</div>
+
+<!--Required scripts-->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!--Custom script here-->
+<script>
+    
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+    modal.style.display = "none";
+}
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+    
+    </script>
 </body>
 
 </html>
+
+<footer class="col-xs-12" style="text-align: center">
+    <p>
+        <a/ href="index.html">Home</a> |
+            <a/ href="contact.html">Contact</a> |
+                <a/ href="events.html">Events</a>
+    </p>
+    <p>Copyright 2018</p>
+
+</footer>
