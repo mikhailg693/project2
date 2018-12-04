@@ -56,43 +56,44 @@
                 <div style="border: 5px dashed white;padding:20px;">
 
                     <h2>How Are We Doing?</h2>
-
+                    <form id="myForm">
                     <div>
                         <label>Full Name<br>
-                <input type="text" name="companyName" placeholder="Ex. John Appleseed" style="border-radius:5px;width:300px">
-                </label>
+                            <input type="text" name="companyName" placeholder="Ex. John Appleseed" style="border-radius:5px;width:300px">
+                            </label>
                     </div><br>
 
                     <div>
                         <label>Topic<br>
-                <input type="text" name="jobTitle" placeholder="Ex. Attendence" style="border-radius:5px;width:300px">
-                </label>
+                            <input type="text" name="jobTitle" placeholder="Ex. Attendence" style="border-radius:5px;width:300px">
+                            </label>
                     </div><br>
 
                     <div>
                         <label>Email Address<br>
-                <input type="text" name="recruiterEmail" placeholder="Ex. john@gmail.com" style="border-radius:5px;width:300px">
-                </label>
+                            <input type="text" name="recruiterEmail" placeholder="Ex. john@gmail.com" style="border-radius:5px;width:300px">
+                            </label>
                     </div><br>
 
                     <div>
                         <label>Title<br>
-                <input type="radio" name="referrence" value="Parent"> Parent<br>
-                <input type="radio" name="referrence" value="Student"> Student<br>
-                <input type="radio" name="referrence" value="Other"> Other<br>
-                </label>
+                            <input type="radio" name="referrence" value="Parent"> Parent<br>
+                            <input type="radio" name="referrence" value="Student"> Student<br>
+                            <input type="radio" name="referrence" value="Other"> Other<br>
+                            </label>
                     </div><br>
 
                     <div>
                         <label style="box-sizing: border-box;">Questions/Concerns<br>
-                <textarea rows="3" cols="18" style="width: 600px;height:200px;border-radius: 5px"> 
-                </textarea>
-                </label>
+                            <textarea rows="3" cols="18" style="width: 600px;height:200px;border-radius: 5px"> 
+                            </textarea>
+                            </label>
                     </div>
+                    
+                    <button onclick="submitButton()">Send Email</button>
+<!--                    <input type="submit" name="emailNow" value="Send Email" style="border-radius: 5px">-->
 
-                    <input type="submit" name="emailNow" value="Send Email" style="border-radius: 5px">
-
-
+                    </form>
                 </div>
             </div>
 
@@ -125,13 +126,19 @@
     <!--Custom script here-->
     <script>
 
+        function submitButton(){
+            alert("Your email was sent successfully!\nThank for contacting Manhattan Hunter Science High School.")
+        }
+
+        var form = document.getElementById("myForm");
+        form.reset();
 
     </script>
 </body>
 
 </html>
 
-<footer class="col-xs-12" style="text-align: center">
+<footer class="col-xs-12" style="text-align:center;padding-bottom:30px;padding-top:30px;">
     <p>
         <a/ href="index.html">Home</a> |
             <a/ href="contact.html">Contact</a> |
