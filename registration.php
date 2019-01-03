@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Contact Us</title>
+    <title>Registration Page</title>
 
     <!--Required metatag and stylesheet-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -54,31 +54,33 @@
             <div class="col-xs-8 events">
                 <div style="border: 5px dashed white;padding:20px;">
 
-                    <h2>Events Registration</h2>
-                    <form id="myForm">
+                    <h2>Event Registration</h2>
+                    <p><span class="error">Note: * required field.</span></p>
+                    
+                    <form id="myForm" method="post" action="dbprocess.php" enctype ='multipart/form-data'>
                     <div>
-                        <label>Full Name<br>
-                            <input type="text" name="companyName" placeholder="Ex. John Appleseed" style="border-radius:5px;width:300px">
+                        <label>Full Name<span class="error">*</span><br>
+                            <input type="text" name="fullname" placeholder="Ex. John Appleseed" style="border-radius:5px;width:300px">
+                            </label>
+                    </div><br>
+                        
+                    <div>
+                        <label>Student ID<span class="error">*</span><br>
+                            <input type="text" name="studentid" placeholder="Ex. 994466" style="border-radius:5px;width:300px">
                             </label>
                     </div><br>
 
                     <div>
-                        <label>Event<br>
-                            <input type="text" name="jobTitle" placeholder="Ex. Attendence" style="border-radius:5px;width:300px">
+                        <label>Email Address<span class="error">*</span><br>
+                            <input type="text" name="email" placeholder="Ex. john@gmail.com" style="border-radius:5px;width:300px">
                             </label>
                     </div><br>
 
                     <div>
-                        <label>Email Address<br>
-                            <input type="text" name="recruiterEmail" placeholder="Ex. john@gmail.com" style="border-radius:5px;width:300px">
-                            </label>
-                    </div><br>
-
-                    <div>
-                        <label>Title<br>
-                            <input type="radio" name="referrence" value="Parent"> Parent<br>
-                            <input type="radio" name="referrence" value="Student"> Student<br>
-<!--                            <input type="radio" name="referrence" value="Other"> Other<br>-->
+                        <label>Events<span class="error">*</span><br>
+                            <input type="radio" name="events" value="Syracuse"> College Trip at Syracuse University<br>
+                            <input type="radio" name="events" value="Lion King"> Lion King Play<br>
+                            <input type="radio" name="events" value="Facebook"> Day at Facebook<br>
                             </label>
                     </div><br>
 
@@ -91,8 +93,8 @@
                     </div>
 -->
                     
-                    <button onclick="submitButton()">Send Email</button>
-                    <input type="submit" name="emailNow" value="Send Email" style="border-radius: 5px">
+                    <button style="border-radius:5px;" onclick="submitButton()">Register</button>
+<!--                    <input type="submit" name="emailNow" value="Send Email" style="border-radius: 5px">-->
 
                     </form>
                 </div>
@@ -103,8 +105,6 @@
             <div class="col-xs-4">
                 <div style="border: 5px dashed white;text-align:center;padding: 20px;padding-bottom: 68px;">
 
-
-
                     <h2>Contact Information</h2>
 
                     <p>Telephone: <br>(212)-501-1235</p>
@@ -112,10 +112,6 @@
                         <br>New York City, NY 10023</p>
                     <br>
 
-                    <iframe style="border: 5px solid white;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.4169760495533!2d-73.98785458459315!3d40.77484627932514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2585fd3f9f1f5%3A0x47aa02f03376233!2s122+Amsterdam+Ave%2C+New+York%2C+NY+10023!5e0!3m2!1sen!2sus!4v1543371510818" width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-                    <p>Take 1 Train to 66th Street Lincoln Center</p>
-                    <p>Take B or D Train to 59th Columbus Circle</p>
                 </div>
             </div>
         </div>
@@ -148,5 +144,3 @@
 </footer>
     
 </html>
-
-
