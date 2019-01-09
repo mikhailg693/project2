@@ -60,27 +60,27 @@
                     <form id="myForm" method="post" action="dbprocess.php" enctype ='multipart/form-data'>
                     <div>
                         <label>Full Name<span class="error">*</span><br>
-                            <input type="text" name="fullname" placeholder="Ex. John Appleseed" style="border-radius:5px;width:300px">
+                            <input type="text" name="full_name" placeholder="Ex. John Appleseed" style="border-radius:5px;width:300px">
                             </label>
                     </div><br>
                         
                     <div>
                         <label>Student ID<span class="error">*</span><br>
-                            <input type="text" name="studentid" placeholder="Ex. 994466" style="border-radius:5px;width:300px">
+                            <input type="text" name="student_id" placeholder="Ex. 994466" style="border-radius:5px;width:300px">
                             </label>
                     </div><br>
 
                     <div>
                         <label>Email Address<span class="error">*</span><br>
-                            <input type="text" name="email" placeholder="Ex. john@gmail.com" style="border-radius:5px;width:300px">
+                            <input type="text" name="user_email" placeholder="Ex. john@gmail.com" style="border-radius:5px;width:300px">
                             </label>
                     </div><br>
 
                     <div>
                         <label>Events<span class="error">*</span><br>
-                            <input type="radio" name="events" value="Syracuse"> College Trip at Syracuse University<br>
-                            <input type="radio" name="events" value="Lion King"> Lion King Play<br>
-                            <input type="radio" name="events" value="Facebook"> Day at Facebook<br>
+                            <input type="radio" name="school_event" value="Syracuse"> College Trip at Syracuse University<br>
+                            <input type="radio" name="school_event" value="Lion King"> Lion King Play<br>
+                            <input type="radio" name="school_event" value="Facebook"> Day at Facebook<br>
                             </label>
                     </div><br>
 

@@ -1,14 +1,14 @@
 <?php session_start();
 
-$_SESSION['f'] = $n = $_POST['fullname'];
-$_SESSION['s'] = $e = $_POST['studentid'];
-$_SESSION['e'] = $u = $_POST['email'];
-$_SESSION['v'] = $p = $_POST['events'];
+$_SESSION['f'] = $f = $_POST['full_name'];
+$_SESSION['s'] = $s = $_POST['student_id'];
+$_SESSION['e'] = $e = $_POST['user_email'];
+$_SESSION['v'] = $v = $_POST['school_event'];
 
-echo $f . "<br>" .
-    $s ."<br>".
-    $e ."<br>".
-    $v ."<br>";
+//echo $f . "<br>" .
+//    $s ."<br>".
+//    $e ."<br>".
+//    $v ."<br>";
 //echo "<br>";
 
 //mkdir('users/'.$u);
@@ -21,7 +21,7 @@ echo $f . "<br>" .
 
 $cnt = mysqli_connect('localhost', 'root', 'root','mhshsp3');
 
-$sql ="insert into mhshsevents (fullname, studentid, email, events) values('$f', '$s','$e','$v')";
+$sql ="insert into mhshsevents (full_name, student_id, user_email, school_event) values('$f', '$s','$e','$v')";
 
 mysqli_query($cnt, $sql);
 
