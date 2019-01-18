@@ -3,33 +3,69 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="style.css">
+	<title>Attendance Page</title>
+    
+    <!--Required metatag and stylesheet-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--Custom styles here-->
+    <link rel="stylesheet" href="css/style.css">
+    
 	<style>
 		table, td {
-			border: 1px solid #000;
+			border: 3px solid mediumpurple;
+            text-align: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #fff;
 		}
 		th{
-			background: #000;
-			color:#fff;
+			background: mediumpurple;
+			color:#000;
 			padding:10px;
+            text-align: center;
 		}
-		td:first-child ~ td {
+		td {
 			padding: 20px;
+            color: #000;
 		}
-		
-/*
-		img{
-			width:70px;
-		}
-*/
+        body{
+            background-color: white;
+            width: 100%;
+            margin: auto;
+            
+        }
 	</style>
 </head>
 <body>
 
+    <!--Logo & Nav-->
+    
+    <div class="header" style="background-color:white;">
+
+        <div class="col-xs-3">
+            <a href="index.html">
+            <img src="img/mhshslogo.png" style="width:120px;height:75px;padding-top:3px;"></a>
+        </div>
+
+        <div class="navbar" id="navbar" style="margin-bottom:0px;margin-left:15px;margin-right:15px;padding-right:20px;padding-top:10px;">
+            <ul class="nav navbar-nav navbar-right" style="background-color:white;border:2px solid mediumpurple;background-color:white;border-radius: 15px;">
+                <li class="active" style="border-right: 1px solid mediumpurple"><a href="index.html">Home</a></li>
+                <li style="border-right: 1px solid mediumpurple"><a href="contact.html" target="_blank">Contact Us</a></li>
+                <li style="border-right: 1px solid mediumpurple"><a href="events.html" target="_blank">Events</a></li>
+                <li style="border-right: 0px solid mediumpurple"><a href=registration.php target="_blank">Registration</a></li>
+                <li style="border-left: 1px solid mediumpurple"><a href="dbdisplay.php" target="_blank">Attendance</a></li>
+            </ul>
+
+        </div>
+    </div>
+    
 <table>
 	<tr>
-		<th>name</th><th>student</th><th>email</th><th>event</th>
+		<th>Name</th><th>Student ID</th><th>Email</th><th>Event</th>
 	</tr>
 
 	<?php

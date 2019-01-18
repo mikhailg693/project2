@@ -13,11 +13,13 @@
     <link rel="stylesheet" href="css/style.css">
 
     <style>
-        body {
+        body{
             background-image: ;
             background-size: ;  
         }
-
+        {
+            border: dashed 3px;
+        }
     </style>
 
 </head>
@@ -42,7 +44,7 @@
                 <li style="border-right: 1px solid mediumpurple"><a href="contact.html" target="_blank">Contact Us</a></li>
                 <li style="border-right: 1px solid mediumpurple"><a href="events.html" target="_blank">Events</a></li>
                 <li style="border-right: 0px solid mediumpurple"><a href=registration.php target="_blank">Registration</a></li>
-                <li style="border-left: 1px solid mediumpurple"><a href="http://www.psal.org/events-and-standings/school-calendar.aspx?schid=03548" target="_blank">Athletics</a></li>
+                <li style="border-left: 1px solid mediumpurple"><a href="dbdisplay.php" target="_blank">Attendance</a></li>
             </ul>
             <!--<img src="img/mhshsbackground.jpg" style="width:1206px">-->
         </div>
@@ -83,34 +85,23 @@
                             <input type="radio" name="school_event" value="Facebook"> Day at Facebook<br>
                             </label>
                     </div><br>
-
-<!--
-                    <div>
-                        <label style="box-sizing: border-box;">Questions/Concerns<br>
-                            <textarea rows="3" cols="18" style="width: 600px;height:200px;border-radius: 5px"> 
-                            </textarea>
-                            </label>
-                    </div>
--->
                     
                     <button style="border-radius:5px;" onclick="submitButton()">Register</button>
-<!--                    <input type="submit" name="emailNow" value="Send Email" style="border-radius: 5px">-->
 
                     </form>
                 </div>
             </div>
 
 
-            <!--Contact Information-->
+            <!--Event Information-->
             <div class="col-xs-4">
                 <div style="border: 5px dashed white;text-align:center;padding: 20px;padding-bottom: 68px;">
 
-                    <h2>Contact Information</h2>
+                    <h2>Event Information</h2>
 
-                    <p>Telephone: <br>(212)-501-1235</p>
-                    <p>Address: <br>Manhattan/Hunter Science High School<br>122 Amsterdam Ave, 5th Floor
-                        <br>New York City, NY 10023</p>
-                    <br>
+
+
+
 
                 </div>
             </div>
@@ -119,7 +110,8 @@
     <!--Required scripts-->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
+    <script type="text/javascript" src="assets/js/jquery-ui-1.10.4.js"></script>
+    
     <!--Custom script here-->
     <script>
 
@@ -129,6 +121,11 @@
 
         var form = document.getElementById("myForm");
         form.reset();
+        
+        $("#page3container").delay(6500).fadeIn(500);
+        $("#pg3slide").delay(11500).animate(
+        { width: "66%" }
+                    );
 
     </script>
 </body>
