@@ -17,7 +17,6 @@
 		table, td {
 			border: 3px solid mediumpurple;
             text-align: center;
-            display: block;
             margin-left: auto;
             margin-right: auto;
             background-color: #fff;
@@ -70,7 +69,8 @@
 
 	<?php
 		//connect to database
-		$cnt = mysqli_connect("localhost", "root", "root", "mhshsp3");
+        //$cnt = mysqli_connect('localhost', 'root', 'root','mhshsp3');
+		$cnt = mysqli_connect("localhost", "fssa", "Webdevfun1!", "fssa");
 		//sql statement to capture all data from a table
 		$sql = "SELECT * FROM mhshsevents";
 		//query by connecting and adding sql statement
@@ -78,8 +78,13 @@
 		//print_r($result);
 		foreach($result as $v) {
 			//print_r($v);
-			echo '<br>';
-			echo '<tr><td>'.$v['full_name'].'</td><td>'.$v['student_id'].'</td><td>'.$v['user_email'].'</td><td>'.$v['school_event'].'</td></tr>';
+//			echo '<br>';
+			echo '<tr>
+                    <td>'.$v['full_name'].'</td>
+                    <td>'.$v['student_id'].'</td>
+                    <td>'.$v['user_email'].'</td>
+                    <td>'.$v['school_event'].'</td>
+                </tr>';
 		}
 		//close the connection
 		mysqli_close($cnt); // Closing Connection

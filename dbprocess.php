@@ -19,7 +19,8 @@ $_SESSION['v'] = $v = $_POST['school_event'];
 //
 //move_uploaded_file($t,$f);
 
-$cnt = mysqli_connect('localhost', 'root', 'root','mhshsp3');
+//$cnt = mysqli_connect('localhost', 'root', 'root','mhshsp3');
+$cnt = mysqli_connect('localhost', 'fssa', 'Webdevfun1!','fssa');
 
 $sql ="insert into mhshsevents (full_name, student_id, user_email, school_event) values('$f', '$s','$e','$v')";
 
