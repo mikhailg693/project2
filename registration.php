@@ -13,12 +13,12 @@
     <link rel="stylesheet" href="css/style.css">
 
     <style>
-        body{
-            background-image: ;
-            background-size: ;  
-        }
         {
             border: dashed 3px;
+        }
+        .container{
+			margin: 0px auto;
+			text-align: center;
         }
     </style>
 
@@ -51,10 +51,7 @@
     </div>
 
     <!--School Events-->
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-8 events">
-                <div style="border: 5px dashed white;padding:20px;">
+    <div class="container" style="border: 5px dashed mediumpurple;padding:20px;">
 
                     <h2>Event Registration</h2>
                     <p><span class="error">Note: * required field.</span></p>
@@ -90,23 +87,7 @@
 
                     </form>
                 </div>
-            </div>
 
-
-            <!--Event Information-->
-            <div class="col-xs-4">
-                <div style="border: 5px dashed white;text-align:center;padding: 20px;padding-bottom: 68px;">
-
-                    <h2>Event Information</h2>
-
-
-
-
-
-                </div>
-            </div>
-        </div>
-    </div>
     <!--Required scripts-->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
