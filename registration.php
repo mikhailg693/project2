@@ -39,14 +39,13 @@
         </div>
 
         <div class="navbar" id="navbar" style="margin-bottom:15px;margin-left:15px;margin-right:15px;padding-right:20px;padding-top:10px;">
-            <ul class="nav navbar-nav navbar-right" style="background-color:white;border:2px solid mediumpurple;background-color:white;border-radius: 15px;">
+            <ul class="nav navbar-nav navbar-right" style="background-color:white;border:2px solid mediumpurple;background-color:white;">
                 <li class="active" style="border-right: 1px solid mediumpurple"><a href="index.html">Home</a></li>
                 <li style="border-right: 1px solid mediumpurple"><a href="contact.html" target="_blank">Contact Us</a></li>
                 <li style="border-right: 1px solid mediumpurple"><a href="events.html" target="_blank">Events</a></li>
                 <li style="border-right: 0px solid mediumpurple"><a href=registration.php target="_blank">Registration</a></li>
                 <li style="border-left: 1px solid mediumpurple"><a href="dbdisplay.php" target="_blank">Attendance</a></li>
             </ul>
-            <!--<img src="img/mhshsbackground.jpg" style="width:1206px">-->
         </div>
     </div>
 
